@@ -60,9 +60,9 @@ function evenOdd(input) {
 //////////////////////////////////////////////////////////////////////////////////
 
 // Problem 3: The function isLGSeven() takes a number as parameter which is deducted by 7,
-// and it checks whether the absolute value of the deduction is greater or equal to 7.
-// If it is then the double of the absolute value is returned else
-// the value that is left after deduction is returned.
+// and it checks whether the value of the deduction is greater or equal to 7.
+// If it is then the double of the value is returned
+// else the value that is left after deduction is returned.
 
 function isLGSeven(number) {
   // checks if the input is a number else returns a error message
@@ -73,8 +73,8 @@ function isLGSeven(number) {
     // checks whether the absoulte difference is greater or equal to 7
     // if it is then the absolute difference is returned by doubling it
     // else the difference is returned
-    if (Math.abs(subtractionResult) >= 7) {
-      const result = Math.abs(subtractionResult) * 2;
+    if (subtractionResult >= 7) {
+      const result = subtractionResult * 2;
       return result;
     } else {
       return subtractionResult;
@@ -85,7 +85,7 @@ function isLGSeven(number) {
 }
 
 // isLGSeven function tested
-// console.log(isLGSeven(13));
+// console.log(isLGSeven(15));
 // console.log(isLGSeven("45"));
 // console.log(isLGSeven(-15));
 // console.log(isLGSeven(6));
@@ -160,7 +160,7 @@ function gemsToDiamond(friend1Gem, friend2Gem, friend3Gem) {
 }
 
 // gemsToDiamond function tested
-// console.log(gemsToDiamond(34, 45, 10));
+// console.log(gemsToDiamond(100, 5, 1));
 // console.log(gemsToDiamond(1, 1, 1));
 // console.log(gemsToDiamond(20, 200, 50));
 // console.log(gemsToDiamond(34, 45));
