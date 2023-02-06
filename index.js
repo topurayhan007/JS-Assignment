@@ -74,7 +74,7 @@ function isLGSeven(number) {
     // if it is then the absolute difference is returned by doubling it
     // else the difference is returned
     if (subtractionResult >= 7) {
-      const result = subtractionResult * 2;
+      const result = number * 2;
       return result;
     } else {
       return subtractionResult;
